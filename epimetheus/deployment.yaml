@@ -23,8 +23,9 @@ metadata:
   labels:
     app: epimetheus
 spec:
+  strategy:
+    type: Recreate
   replicas: 1
-
   selector:
     matchLabels:
       app: epimetheus
